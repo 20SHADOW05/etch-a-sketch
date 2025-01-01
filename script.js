@@ -58,7 +58,6 @@ checkbox.addEventListener("change",() => {  //for borders
 
 const color = document.getElementById("color"); 
 color.addEventListener("change",() => {
-    isRainbowMode = false;
     colorValue = color.value;
     console.log(color.value);
 })
@@ -113,7 +112,7 @@ function colorGenerate(){ // for generating random rgb color
 R_color = colorGenerate();
 console.log(R_color);
 
-const r_mode = document.querySelector(".rainbow");
+const r_mode = document.querySelector(".random");
 r_mode.addEventListener("click",() => {
         Global_Event("mouseover",".cell", container , (event_object) => {
             R_color = colorGenerate();
